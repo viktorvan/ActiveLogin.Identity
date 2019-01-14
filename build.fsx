@@ -31,6 +31,7 @@ Target.create "Clean" (fun _ ->
 Target.create "Build" (fun _ -> DotNet.build id "ActiveLogin.Identity.sln")
 Target.create "Test" (fun _ -> DotNet.test id "test/ActiveLogin.Identity.Swedish.Test")
 Target.create "XUnit" (fun _ -> DotNet.test id "test/ActiveLogin.Identity.Swedish.Xunit")
+Target.create "FsUnit" (fun _ -> DotNet.test id "test/ActiveLogin.Identity.Swedish.FsUnit")
 
 "Build"
     ==> "Test"
